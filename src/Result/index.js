@@ -2,8 +2,9 @@ const Result = ({ result }) => (
     <p>
         {result !== undefined && (
             <>
-                {result.sourceAmount} {result.currency}&nbsp;=&nbsp;
-                {result.targetAmount} PLN
+                {result.sourceAmount} {result.currency} {result.sourceAmount === "" ? "=" : ""}
+
+                {result.targetAmount} {result.targetAmount === "" ? "PLN" : ""}
             </>
         )}
     </p>
