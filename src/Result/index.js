@@ -1,13 +1,13 @@
+import "./style.css";
 const Result = ({ result }) => (
-    <p>
+    <div className="result">
         {result !== undefined && (
             <>
-                {result.sourceAmount} {result.currency} {result.sourceAmount === "" ? "=" : ""}
-
-                {result.targetAmount} {result.targetAmount === "" ? "PLN" : ""}
+                {result.sourceAmount} {result.currency} {result.sourceAmount > 0 ? " = " : ""}
+                {result.targetAmount} {result.targetAmount > 0 ? " PLN " : ""}
             </>
         )}
-    </p>
+    </div>
 )
 
 export default Result;

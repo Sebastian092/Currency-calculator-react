@@ -1,10 +1,5 @@
  const currencies = [
     {
-        shortcut: "",
-        rate: "",
-    },
-
-    {
         shortcut: "EUR",
         rate: 4.54,
     },
