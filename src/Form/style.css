@@ -1,5 +1,93 @@
+.form {
+    background: rgb(234, 236, 235);
+    border-radius: 25px;
+    box-shadow: 1px -1px 7px 2px #BDBBBF;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+    min-width: 600px;
+    min-height: 380px;
+}
+
+@media (max-width:767px) {
+    .form {
+        min-width: 200px;
+        min-height: 400px;
+    }
+}
+
+@media (max-width:446px) {
+    .form {
+        min-width: 200px;
+        min-height: 430px;
+
+    }
+}
+
+.form__fieldset {
+    border: none;
+}
+
+.form__button {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    margin: 20px 5px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    background: black;
+    color: white;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form__legend {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 30px 20px;
+}
+
 .form__input {
-    padding: 10px;
-    margin: 5px;
-    width: 150px;
+    min-width: 298px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .form__input {
+       width: 175px;
+    }
+}
+
+.form__label {
+    display: flex;
+    gap: 62px;
+}
+
+.form__label--input {
+    display: flex;
+    gap: 70px;
+}
+
+@media (max-width: 767px) {
+    .form__input {
+        min-width: 175px;
+    }
+}
+
+.form__pharagraph {
+    text-align: center;
+
+}
+
+.form__span {
+    text-align: center;
 }

@@ -9,4 +9,10 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
+  background: url("../public/PLN.jpg");
+  margin: auto;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
