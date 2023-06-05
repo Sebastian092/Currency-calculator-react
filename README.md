@@ -22,8 +22,6 @@ Sebastian Szaładyga
 ![Sebastian2](https://github.com/Sebastian092/currency-calculator-react/assets/120946080/d8f1f4f8-2e0a-4b18-90f8-3ac77638be34)
 
 
-
-
 #### Link to my github
 https://github.com/Sebastian092
 
