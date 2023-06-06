@@ -1,10 +1,10 @@
 import "./style.css";
 const Result = ({ result }) => (
     <div className="result">
-        {result !== undefined && (
+        {result && (
             <>
-                {result.sourceAmount} {result.currency} {result.sourceAmount > 0 ? " = " : ""}
-                {result.targetAmount} {result.targetAmount > 0 ? " PLN " : ""}
+                {result.sourceAmount.toFixed(2)} {result.currency} {result.sourceAmount > 0 ? " = " : ""}
+                {result.targetAmount.toFixed(2)} {result.targetAmount > 0 ? " PLN " : ""}
             </>
         )}
     </div>
