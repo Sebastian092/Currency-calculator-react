@@ -50,7 +50,7 @@ const Form = ({ finalResult, result }) => {
               />
             </label>
           </p>        
-            <button className="form__button">Convert currency</button>
+            <button className="form__button">Convert currency to PLN</button>
             <p className="form__pharagraph">Exchange rates are from google finance dated on 04.06.2023</p>
             <Result result={result} />        
         </fieldset>
