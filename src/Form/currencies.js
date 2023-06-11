@@ -1,4 +1,4 @@
- const currencies = [
+const currencies = [
     {
         shortcut: "EUR",
         rate: 4.49,
@@ -11,6 +11,6 @@
         shortcut: "GBP",
         rate: 5.22,
     },
-    ]
+]
 
-    export default currencies;
+export default currencies;
