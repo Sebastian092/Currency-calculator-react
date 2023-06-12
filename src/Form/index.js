@@ -2,6 +2,7 @@ import "./style.css";
 import { useState } from 'react';
 import currencies from "./currencies";
 import Result from "../Result";
+import { Clock } from "../Clock";
 
 const Form = ({ finalResult, result }) => {
   const [amount, setAmount] = useState("")
@@ -15,6 +16,7 @@ const Form = ({ finalResult, result }) => {
   return (
     <div className="body">
       <form className="form" onSubmit={onSubmit}>
+        <Clock />
         <fieldset className="form__fieldset">
           <legend className="form__legend">Currency calculator</legend>
           <p>
@@ -49,10 +51,10 @@ const Form = ({ finalResult, result }) => {
                 onChange={({ target }) => setAmount(target.value)}
               />
             </label>
-          </p>        
-            <button className="form__button">Convert currency to PLN</button>
-            <p className="form__pharagraph">Exchange rates are from google finance dated on 04.06.2023</p>
-            <Result result={result} />        
+          </p>
+          <button className="form__button">Convert currency to PLN</button>
+          <p className="form__pharagraph">Exchange rates are from google finance dated on 04.06.2023</p>
+          <Result result={result} />
         </fieldset>
       </form>
     </div>

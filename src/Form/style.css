@@ -5,13 +5,13 @@
     padding: 20px 20px 20px 20px;
     margin: 20px;
     min-width: 600px;
-    min-height: 380px;
+    min-height: 420px;
 }
 
 @media (max-width:767px) {
     .form {
         min-width: 200px;
-        min-height: 400px;
+        min-height: 420px;
     }
 }
 
@@ -94,6 +94,7 @@
 
 .form__pharagraph {
     text-align: center;
+    font-family: monospace;
 }
 
 .form__span {
