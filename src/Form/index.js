@@ -48,6 +48,7 @@ const Form = ({ finalResult, result }) => {
                 required
                 value={amount}
                 placeholder="Put the amount"
+                min="0.01"
                 onChange={({ target }) => setAmount(target.value)}
               />
             </label>
