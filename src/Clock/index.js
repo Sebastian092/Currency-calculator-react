@@ -14,17 +14,21 @@ export const Clock = () => {
         };
     }, []);
 
+    const formattedDate = date.toLocaleString(undefined, {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        minute: "2-digit",
+        hour: "2-digit",
+        second: "2-digit"
+    })
+
+
     return (
-        <div className="form__clock">
-            <p>Current date: {date.toLocaleString(undefined, {
-                weekday: "long",
-                day: "numeric",
-                month: "long",
-                minute:"2-digit",
-                hour:"2-digit",
-                second:"2-digit"
-            }
-            )}</p>
+        <div className="clock">
+            <p>
+                Current date: {formattedDate}
+            </p>
         </div>
     )
 }
