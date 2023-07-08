@@ -1,8 +1,8 @@
-import "./style.css";
 import { useState } from 'react';
 import currencies from "./currencies";
 import Result from "../Result";
 import { Clock } from "../Clock";
+import { Body, Legend, Label, Select, Input, Fieldset, Span, Pharagraph, Button, InputLabel, FormBody } from "./styled"
 
 const Form = ({ finalResult, result }) => {
   const [amount, setAmount] = useState("")
@@ -14,15 +14,15 @@ const Form = ({ finalResult, result }) => {
   };
 
   return (
-    <div className="body">
-      <form className="form" onSubmit={onSubmit}>
+    <Body>
+      <FormBody onSubmit={onSubmit}>
         <Clock />
-        <fieldset className="form__fieldset">
-          <legend className="form__legend">Currency calculator</legend>
+        <Fieldset>
+          <Legend>Currency calculator</Legend>
           <p>
-            <label className="form__label">
+            <Label>
               <span>Currency*</span>
-              <select className="form__input"
+              <Select
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
               >
@@ -34,14 +34,13 @@ const Form = ({ finalResult, result }) => {
                     {currency.shortcut}
                   </option>
                 ))}
-              </select>
-            </label>
+              </Select>
+            </Label>
           </p>
           <p>
-            <label className="form__label--input">
-              <span className="form_span">Amount*</span>
-              <input
-                className="form__input"
+            <InputLabel>
+              <Span>Amount*</Span>
+              <Input
                 type="number"
                 minLength="1"
                 step="0.01"
@@ -51,14 +50,14 @@ const Form = ({ finalResult, result }) => {
                 min="0.01"
                 onChange={({ target }) => setAmount(target.value)}
               />
-            </label>
+            </InputLabel>
           </p>
-          <button className="form__button">Convert currency to PLN</button>
-          <p className="form__pharagraph">Exchange rates are from google finance dated on 04.06.2023</p>
+          <Button>Convert currency to PLN</Button>
+          <Pharagraph>Exchange rates are from google finance dated on 04.06.2023</Pharagraph>
           <Result result={result} />
-        </fieldset>
-      </form>
-    </div>
+        </Fieldset>
+      </FormBody>
+    </Body>
   )
 };
 
