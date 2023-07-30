@@ -1,4 +1,4 @@
-import { ClockDiv } from "./styled";
+import { Pharagraph } from "./styled";
 import { useCurrentDate } from "./useCurrentDate";
 
 export const Clock = () => {
@@ -15,10 +15,8 @@ export const Clock = () => {
 
 
     return (
-        <ClockDiv>
-            <p>
+            <Pharagraph>
                 Current date: {formattedDate}
-            </p>
-        </ClockDiv>
+            </Pharagraph>
     )
 }
