@@ -2,7 +2,7 @@ import { useState } from 'react';
 import currencies from "./currencies";
 import Result from "../Result";
 import { Clock } from "../Clock";
-import { Body, Legend, Label, Select, Input, Fieldset, Span, Pharagraph, Button, InputLabel, FormBody } from "./styled"
+import { Container, Legend, Label, Select, Input, Fieldset, Span, Pharagraph, Button, InputLabel, FormBody } from "./styled"
 
 const Form = ({ finalResult, result }) => {
   const [amount, setAmount] = useState("")
@@ -14,7 +14,7 @@ const Form = ({ finalResult, result }) => {
   };
 
   return (
-    <Body>
+    <Container>
       <FormBody onSubmit={onSubmit}>
         <Clock />
         <Fieldset>
@@ -57,7 +57,7 @@ const Form = ({ finalResult, result }) => {
           <Result result={result} />
         </Fieldset>
       </FormBody>
-    </Body>
+    </Container>
   )
 };
 
