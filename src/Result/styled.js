@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ResultDiv = styled.div`
+export const Container = styled.div`
   text-align: center;
-    margin: 10px;
+  margin: 10px;
 `
