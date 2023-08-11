@@ -12,9 +12,9 @@ import {
   Pharagraph,
   Button,
   InputLabel,
-  FormBody, 
+  FormBody,
   Loading,
-} from "./styled"
+} from "./styled";
 import { useData } from "../useData";
 
 const Form = () => {
@@ -22,6 +22,7 @@ const Form = () => {
   const [currency, setCurrency] = useState("EUR");
   const [result, setResult] = useState("");
   const ratesData = useData();
+  const ratesDate = ratesData.date;
 
 
   const finalResult = (currency, amount) => {
@@ -49,7 +50,7 @@ const Form = () => {
             ?
             (
               <Loading>
-                Please be patient, loading exchange rates
+                Please be patient, loading exchange rates.
               </Loading>
             )
             :
@@ -57,7 +58,8 @@ const Form = () => {
               ?
               (
                 <p>
-                  Error, something went wrong. Please check your network or try later
+                  Error, something went wrong.<br />
+                  Please check your network or try later.
                 </p>
               )
               :
@@ -97,7 +99,7 @@ const Form = () => {
                     </InputLabel>
                   </p>
                   <Button>Convert currency to PLN</Button>
-                  <Pharagraph>Exchange rates are from exchangerate.host dated on {ratesData.date}
+                  <Pharagraph>Exchange rates are from exchangerate.host dated on {ratesDate}
                   </Pharagraph>
                   <Result result={result} />
                 </>
