@@ -6,6 +6,7 @@ export const Container = styled.div`
     align-items: center;
     height: 100vh;
 `
+
 export const Legend = styled.legend`
     text-align: center;
     font-size: 2rem;
@@ -20,6 +21,7 @@ export const Label = styled.label`
     gap: 12px;
     }
 `
+
 export const Select = styled.select`
     min-width: 298px;
     text-align: center;
@@ -34,22 +36,27 @@ export const Select = styled.select`
         width: 100px;
     }
 `
+
 export const Input = styled.input`
     min-width: 298px;
     text-align: center;
     padding: 5px;
     border-radius: 5px;
 `
+
 export const Fieldset = styled.fieldset`
     border: none;
 `
+
 export const Span = styled.span`
     text-align: center;
 `
+
 export const Pharagraph = styled.p`
     text-align: center;
     font-family: monospace;
 `
+
 export const Button = styled.button`
     border: none;
     border-radius: 5px;
@@ -69,6 +76,7 @@ export const InputLabel = styled.label`
     gap: 20px;
     }
 `
+
 export const FormBody = styled.form`
     background: rgb(234, 236, 235);
     border-radius: 25px;
@@ -88,4 +96,16 @@ export const FormBody = styled.form`
         min-height: 430px;
         padding: 0;
     }
+`
+
+export const Loading = styled.p`
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 30px;
+`
+
+export const Error = styled.p`
+  text-align: center;
+    font-size: 1.5rem;
+    padding: 30px;
 `
