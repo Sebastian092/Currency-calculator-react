@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Result from "../Result";
 import { Clock } from "../Clock";
 import {
@@ -14,6 +14,7 @@ import {
   InputLabel,
   FormBody,
   Loading,
+  Error,
 } from "./styled";
 import { useData } from "../useData";
 
@@ -23,7 +24,6 @@ const Form = () => {
   const [result, setResult] = useState("");
   const ratesData = useData();
   const ratesDate = ratesData.date;
-
 
   const finalResult = (currency, amount) => {
     const rate = ratesData.rates[currency];
@@ -57,10 +57,10 @@ const Form = () => {
             ratesData.status === "error"
               ?
               (
-                <p>
+                <Error>
                   Error, something went wrong.<br />
                   Please check your network or try later.
-                </p>
+                </Error>
               )
               :
               (
@@ -105,7 +105,6 @@ const Form = () => {
                 </>
               )
           }
-
         </Fieldset>
       </FormBody>
     </Container>
