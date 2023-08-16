@@ -3,7 +3,8 @@
 Simple currency calculator which converts EUR, GBP and USD to PLN
 
 ## How this work
-![currency calculator](https://github.com/Sebastian092/currency-calculator-react/assets/120946080/86ec41e1-815a-4860-a236-d4e513da2264)
+![calculator](https://github.com/Sebastian092/currency-calculator-react/assets/120946080/9bc47475-910a-425f-b2a2-31da65726dbf)
+
 
 
 #### Technologies:
@@ -11,6 +12,7 @@ Simple currency calculator which converts EUR, GBP and USD to PLN
  - JS (ES6)
  - HTML
  - CSS
+ - API
 
 ### Link to page
 https://sebastian092.github.io/currency-calculator-react/
