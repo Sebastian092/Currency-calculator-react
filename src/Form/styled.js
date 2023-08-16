@@ -17,7 +17,7 @@ export const Label = styled.label`
     display: flex;
     gap: 62px;
 
-    @media (max-width: 410px) {
+    @media (max-width: 430px) {
     gap: 12px;
     }
 `
@@ -29,10 +29,10 @@ export const Select = styled.select`
     border-radius: 5px;
 
     @media (max-width: 767px) {
-    min-width: 175px;
+    min-width: 220px;
     }
 
-    @media (max-width: 410px) {
+    @media (max-width: 430px) {
         width: 100px;
     }
 `
@@ -42,6 +42,14 @@ export const Input = styled.input`
     text-align: center;
     padding: 5px;
     border-radius: 5px;
+
+    @media (max-width: 767px) {
+    min-width: 220px;
+    }
+
+    @media (max-width: 430px) {
+        width: 100px;
+    }
 `
 
 export const Fieldset = styled.fieldset`
@@ -72,7 +80,7 @@ export const InputLabel = styled.label`
     display: flex;
     gap: 70px;
 
-    @media (max-width: 410px) {
+    @media (max-width: 430px) {
     gap: 20px;
     }
 `
