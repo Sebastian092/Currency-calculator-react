@@ -1,6 +1,6 @@
 # Currency calculator
 
-Simple currency calculator which converts EUR, GBP and USD to PLN
+Simple currency calculator which converts EUR, GBP,USD and many other to PLN
 
 ## How this work
 ![calculator](https://github.com/Sebastian092/currency-calculator-react/assets/120946080/9bc47475-910a-425f-b2a2-31da65726dbf)
