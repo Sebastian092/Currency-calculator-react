@@ -26,6 +26,7 @@ export const useData = () => {
         };
 
         setTimeout(fetchData, 1500);
+        
     }, [])
 
     return data;
