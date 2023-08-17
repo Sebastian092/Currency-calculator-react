@@ -2,10 +2,12 @@
 
 Simple currency calculator which converts EUR, GBP,USD and many other to PLN
 
+## About
+
+Application is based on API, directly from exchangerate.host which provide data such as currency, exchange rate, course date.
+
 ## How this work
 ![calculator](https://github.com/Sebastian092/currency-calculator-react/assets/120946080/9bc47475-910a-425f-b2a2-31da65726dbf)
-
-
 
 #### Technologies:
  - React.js
@@ -36,7 +38,7 @@ In the project directory, you can run:
 #### `npm start`
 
 Runs the app in the development mode.\
-Open https://sebastian092.github.io/todo-list-react/ to view it in your browser.
+Open http://localhost:3000/currency-calculator-react to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
